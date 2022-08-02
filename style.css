@@ -21,7 +21,7 @@
     --white: hsl(0, 0%, 100%);
 
     --gradient: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
-    --gradient-pale: linear-gradient(90deg, rgba(49,211,92,0.5021535466226299) 0%, rgba(43,183,218,0.499344557858585) 100%);
+    --gradient-pale: linear-gradient(90deg, rgba(103,213,132,1) 0%, rgba(123,193,210,1) 100%);
 }
 
 body{
@@ -92,7 +92,7 @@ header{
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    border-image: linear-gradient(to right, #31d35c, #2BB7DA) 1;
+    border-image: linear-gradient(to right, #31D35C, #2BB7DA) 1;
     cursor: pointer;
 }
 
@@ -204,10 +204,15 @@ header{
 }
 
 .latest-articles>div{
-    width: 288px;
+    width: 280px;
     overflow: hidden;
     border-radius: 5px;
     background-color: var(--white);
+    margin-right: 20px;
+}
+
+.latest-articles>div:last-child{
+    margin-right: 0;
 }
 
 .latest-articles-image img{
@@ -224,6 +229,91 @@ header{
     margin-bottom: 10px;
 }
 
+.latest-articles h3:hover{
+    color: var(--lime-green);
+    cursor: pointer;
+}
+
 .latest-articles p{
 font-size: 16px;
+}
+
+footer{
+    background-color: var(--dark-blue);
+}
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{
+    display: flex;
+}
+
+.footer-one{
+    width: 300px;
+}
+
+.footer-logo{
+    margin-bottom: 50px;
+}
+
+.footer-social{
+    display: flex;
+}
+
+.footer-social svg{
+    width: 22px;
+    margin-right: 12px;
+}
+
+.footer-two{
+    width: 200px;
+}
+
+.footer-two h3{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-two h3:hover{
+    color: var(--lime-green);
+    cursor: pointer;
+}
+
+.footer-three{
+    width: 200px;
+}
+
+.footer-three h3{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-three h3:hover{
+    color: var(--lime-green);
+    cursor: pointer;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right div{
+    margin-bottom: 30px;
+}
+
+.footer-right h3{
+    color: var(--grayish-blue);
+    font-size: 16px;
+    font-weight: 400;
 }
