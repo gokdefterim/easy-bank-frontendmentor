@@ -261,13 +261,22 @@ footer{
     margin-bottom: 50px;
 }
 
+.footer-logo svg:hover{
+    fill: var(--white);
+
+}
+
 .footer-social{
     display: flex;
 }
 
 .footer-social svg{
-    width: 22px;
     margin-right: 12px;
+}
+
+.footer-social svg:hover{
+    fill: var(--lime-green);
+    cursor: pointer;
 }
 
 .footer-two{
